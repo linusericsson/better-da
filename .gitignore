@@ -1,6 +1,6 @@
-benchmarking/results
-benchmarking/figures
-benchmarking/data
+results
+figures
+data
 
 __pycache__/
 *.py[cod]
