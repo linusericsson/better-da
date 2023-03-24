@@ -19,6 +19,8 @@ export RESULTS_ROOT=$UDA_ROOT/results
 ```
 
 ### Datasets
+If only running the simpler MNIST setup for reproducibility, skip this section and go straight to the Source-only Training section.
+
 To download datasets:
 Download VisDA2017 manually from [here](https://ai.bu.edu/visda-2017/).
 Download Office-31 manually from [here](https://faculty.cc.gatech.edu/~judy/domainadapt/#datasets_code).
@@ -59,7 +61,7 @@ ${DATA_ROOT}/
         ...
 ```
 
-### Source-only Models
+### Source-only Training
 For the training, we will run through a setup on MNIST-M. The other datasets can be used by specifying the right `--dataset`, `--source` and `--target` arguments.
 
 To train 10 source-only models with different hyperparameters and select the checkpoint to use as initialisation for adaptation, run the following:
@@ -102,7 +104,7 @@ python compute_validators.py --results-root ${RESULTS_ROOT} --dataset mnistm --s
 python compute_validators.py --results-root ${RESULTS_ROOT} --dataset mnistm --source mnist --target mnistm --algorithm mmd
 ```
 
-### Generate tables and figures
+### Generate table
 Open the jupyter notebook `generate_table.py` and run all cells. A latex table similar to table 3 will be generated, containing the results over the datasets used.
 
 
