@@ -1,5 +1,6 @@
 # Better Practices for Domain Adaptation
 ## UDA
+The `main` branch of this repo covers the UDA setting. Please find SFDA under the `sfda` branch and TTA under the `tta` branch.
 
 ### Requirements
 
